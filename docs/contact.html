@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
   <meta charset="UTF-8">
   <title>İletişim | ROASTBROS Coffee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="logo">ROASTBROS</div>
-    <nav>
+  
+    <nav class="nav-links">
       <a href="./index.html">Anasayfa</a>
       <a href="./about.html">Biz Kimiz?</a>
       <a href="./menu.html">Menü</a>
-      <a href="./contact.html" class="active">İletişim</a>
+      <a href="./contact.html">İletişim</a>
     </nav>
+  
+    <!-- Search -->
+    <div class="nav-search">
+      <input type="search" placeholder="Ara..." aria-label="Search">
+    </div>
+  
+    <!-- Social Icons -->
+    <div class="nav-social">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+    </div>
   </header>
+  
 
-  <!-- HERO -->
+  <!-- HERO (aynı stil) -->
   <section class="menu-hero">
     <div class="menu-overlay"></div>
     <h1>İLETİŞİM</h1>
@@ -34,24 +51,30 @@
   <section class="contact-section">
     <div class="contact-grid">
 
-      <!-- FORM -->
-      <form class="contact-form">
+      <!-- FORM (SOL) -->
+      <form id="contactForm" class="contact-form">
         <h2>Bize Ulaşın</h2>
 
-        <input type="text" placeholder="Ad Soyad">
-        <input type="email" placeholder="E-posta">
-        <textarea rows="6" placeholder="Mesajınız"></textarea>
+        <label class="sr-only" for="name">Ad Soyad</label>
+        <input type="text" id="name" placeholder="Ad Soyad">
+
+        <label class="sr-only" for="email">E-posta</label>
+        <input type="email" id="email" placeholder="E-posta">
+
+        <label class="sr-only" for="message">Mesajınız</label>
+        <textarea id="message" rows="6" placeholder="Mesajınız"></textarea>
 
         <button type="submit">Gönder</button>
+        <p id="formMessage" aria-live="polite"></p>
       </form>
 
-      <!-- MAP -->
+      <!-- MAP (SAĞ) -->
       <div class="map-card">
         <h2 class="map-title">Haliç Üniversitesi – RoastBros Coffee</h2>
 
         <div class="map-frame">
           <iframe
-            title="Haliç Üniversitesi 5. Levent Kampüsü"
+            title="Haliç Üniversitesi 5. Levent Kampüsü Harita"
             src="https://www.google.com/maps?q=Haliç+Üniversitesi+5.+Levent+Kampüsü&output=embed"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
@@ -62,10 +85,10 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <script src="script.js"></script>
   <footer class="site-footer">
     <div class="footer-container">
-
+  
       <div class="footer-brand">
         <h3>ROASTBROS Coffee</h3>
         <p>
@@ -73,30 +96,30 @@
           herkes için keyifli bir kahve deneyimi.
         </p>
       </div>
-
+  
       <div class="footer-links">
         <h4>Hızlı Linkler</h4>
         <ul>
-          <li><a href="./index.html">Anasayfa</a></li>
-          <li><a href="./about.html">Biz Kimiz?</a></li>
-          <li><a href="./menu.html">Menü</a></li>
-          <li><a href="./contact.html">İletişim</a></li>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="about.html">Biz Kimiz?</a></li>
+          <li><a href="menu.html">Menü</a></li>
+          <li><a href="contact.html">İletişim</a></li>
         </ul>
       </div>
-
+  
       <div class="footer-contact">
         <h4>İletişim</h4>
         <p>📍 Haliç Üniversitesi 5. Levent Kampüsü</p>
         <p>📧 info@roastbroscoffee.com</p>
         <p>📞 +90 555 123 45 67</p>
       </div>
-
+  
     </div>
-
+  
     <div class="footer-bottom">
       © 2025 RoastBros Coffee. Tüm hakları saklıdır.
     </div>
   </footer>
-
+  
 </body>
 </html>
