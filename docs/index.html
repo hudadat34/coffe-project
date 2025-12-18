@@ -6,28 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+
 </head>
 <body>
 
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="logo">ROASTBROS</div>
-    <nav>
-      <a href="index.html">Anasayfa</a>
-      <a href="about.html">Biz Kimiz?</a>
-      <a href="menu.html">Menü</a>
-      <a href="contact.html">İletişim</a>
+
+    <nav class="nav-links">
+      <a href="./index.html">Anasayfa</a>
+      <a href="./about.html">Biz Kimiz?</a>
+      <a href="./menu.html">Menü</a>
+      <a href="./contact.html">İletişim</a>
     </nav>
+
+    <div class="nav-search">
+      <input type="search" placeholder="Ara..." aria-label="Search" />
+    </div>
+
+    <div class="nav-social">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+    </div>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-
-    <!-- Background Video -->
     <video class="hero-video" autoplay muted loop playsinline>
       <source
         src="https://raw.githubusercontent.com/hudadat34/coffe-project/main/video.mp4"
@@ -35,25 +55,46 @@
       />
     </video>
 
-    <!-- Overlay -->
     <div class="overlay"></div>
 
-    <!-- Content -->
     <div class="hero-content">
-      <h1>
-        TEK FİYATLI<br />
-        KAHVE NOKTASI
-      </h1>
-
+      <h1>TEK FİYATLI<br />KAHVE NOKTASI</h1>
       <p>
-        Özenle seçilmiş kahve çekirdekleri, ustalıkla harmanlanmış özel lezzetiyle
-        eşsiz kahve deneyimi.<br />
+        Özenle seçilmiş kahve çekirdekleri, ustalıkla harmanlanmış özel
+        lezzetiyle eşsiz kahve deneyimi.<br />
         <strong>TÜM KAHVE ÇEŞİTLERİ TEK FİYAT.</strong>
       </p>
-
       <div class="brand-bottom">ROASTBROS</div>
     </div>
+  </section>
 
+  <!-- WHY ROASTBROS -->
+  <section class="why-section">
+    <h2>Neden RoastBros?</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <h3>Yüksek Kaliteli Çekirdekler</h3>
+        <p>Güvenilir çiftliklerden özenle seçilmiş yüksek kaliteli kahve çekirdekleri sunuyoruz.</p>
+      </div>
+      <div class="why-card">
+        <h3>Tek Fiyat Politikası</h3>
+        <p>Tüm kahve çeşitleri şeffaf, tek bir fiyatla sunulmaktadır.</p>
+      </div>
+      <div class="why-card">
+        <h3>Minimalist Tasarım</h3>
+        <p>Gereksiz karmaşıklıktan uzak, sade ve modern bir kahve deneyimi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED COFFEES -->
+  <section class="featured-section">
+    <h2>Öne Çıkan Kahveler</h2>
+    <div class="featured-grid">
+      <div class="featured-item">Espresso</div>
+      <div class="featured-item">Cappuccino</div>
+      <div class="featured-item">Cold Brew</div>
+    </div>
   </section>
 
   <!-- FOOTER -->
@@ -71,10 +112,10 @@
       <div class="footer-links">
         <h4>Hızlı Linkler</h4>
         <ul>
-          <li><a href="index.html">Anasayfa</a></li>
-          <li><a href="about.html">Biz Kimiz?</a></li>
-          <li><a href="menu.html">Menü</a></li>
-          <li><a href="contact.html">İletişim</a></li>
+          <li><a href="./index.html">Anasayfa</a></li>
+          <li><a href="./about.html">Biz Kimiz?</a></li>
+          <li><a href="./menu.html">Menü</a></li>
+          <li><a href="./contact.html">İletişim</a></li>
         </ul>
       </div>
 
