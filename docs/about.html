@@ -1,28 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
   <meta charset="UTF-8">
   <title>Biz Kimiz? | ROASTBROS Coffee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>"
+  >
 </head>
+
 <body>
 
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="logo">ROASTBROS</div>
-    <nav>
-      <a href="index.html">Anasayfa</a>
-      <a href="about.html" class="active">Biz Kimiz?</a>
-      <a href="menu.html">Menü</a>
-      <a href="contact.html">İletişim</a>
+
+    <nav class="nav-links">
+      <a href="./index.html">Anasayfa</a>
+      <a href="./about.html">Biz Kimiz?</a>
+      <a href="./menu.html">Menü</a>
+      <a href="./contact.html">İletişim</a>
     </nav>
+
+    <div class="nav-right">
+      <div class="nav-search">
+        <input type="search" placeholder="Ara..." aria-label="Search">
+      </div>
+
+      <div class="nav-social">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
   </header>
 
   <!-- HERO -->
@@ -35,47 +61,47 @@
   <section class="about-section">
     <div class="about-container">
 
+      <!-- SOL METİN -->
       <div class="about-text">
         <h2>RoastBros Coffee</h2>
 
         <p>
           RoastBros Coffee, kaliteli kahveyi herkes için erişilebilir kılma
-          hedefiyle kurulmuş modern bir kahve markasıdır.
+          hedefiyle geliştirilmiş modern bir öğrenci girişimidir.
         </p>
 
         <p>
-          Özenle seçilmiş kahve çekirdeklerini, uzman baristalarımızla
-          buluşturarak her fincanda aynı lezzet ve kaliteyi sunmayı amaçlıyoruz.
+          Özenle seçilmiş kahve çekirdeklerini, sade bir menü yapısı ve net
+          fiyat politikasıyla sunarak kullanıcıya güvenilir bir deneyim
+          sağlamayı amaçlar.
         </p>
 
         <p>
-          Samimi atmosferimiz, modern tasarım anlayışımız ve tek fiyat
-          politikamızla kahve deneyimini herkes için keyifli hale getiriyoruz.
+          Modern tasarım anlayışı ve kullanıcı odaklı yaklaşımıyla,
+          kahveyi günlük yaşamın keyifli bir parçası haline getirmeyi hedefler.
         </p>
       </div>
 
+      <!-- SAĞ KART -->
       <div class="about-values">
-        <div class="value-card">
-          <h3>Kalite</h3>
-          <p>En iyi çekirdekler, en doğru demleme yöntemleri.</p>
-        </div>
 
         <div class="value-card">
-          <h3>Şeffaflık</h3>
-          <p>Tek fiyat politikası ile net ve güvenilir hizmet.</p>
+          <h3>Şirket Ortakları</h3>
+          <p>
+            RoastBros Coffee, Mert Hüdadat ve Mustafa Karakoyun tarafından
+            kurulmuş bir öğrenci girişimidir.
+          </p>
         </div>
 
-        <div class="value-card">
-          <h3>Tutku</h3>
-          <p>Kahveyi sadece içecek değil, bir deneyim olarak görüyoruz.</p>
-        </div>
       </div>
 
     </div>
   </section>
+
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-container">
-  
+
       <div class="footer-brand">
         <h3>ROASTBROS Coffee</h3>
         <p>
@@ -83,7 +109,7 @@
           herkes için keyifli bir kahve deneyimi.
         </p>
       </div>
-  
+
       <div class="footer-links">
         <h4>Hızlı Linkler</h4>
         <ul>
@@ -93,20 +119,21 @@
           <li><a href="contact.html">İletişim</a></li>
         </ul>
       </div>
-  
+
       <div class="footer-contact">
         <h4>İletişim</h4>
         <p>📍 Haliç Üniversitesi 5. Levent Kampüsü</p>
         <p>📧 info@roastbroscoffee.com</p>
         <p>📞 +90 555 123 45 67</p>
       </div>
-  
+
     </div>
-  
+
     <div class="footer-bottom">
       © 2025 RoastBros Coffee. Tüm hakları saklıdır.
     </div>
   </footer>
-  
+
 </body>
 </html>
+
