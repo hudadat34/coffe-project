@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
   <meta charset="UTF-8">
   <title>Menu | ROASTBROS Coffee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +15,34 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+v
 </head>
 <body>
 
   <!-- NAVBAR (aynı stil) -->
   <header class="navbar">
     <div class="logo">ROASTBROS</div>
-    <nav>
-      <a href="index.html">Anasayfa</a>
-      <a href="#">Biz Kimiz?</a>
-      <a href="menu.html">Menü</a>
-      <a href="#">İletişim</a>
+  
+    <nav class="nav-links">
+      <a href="./index.html">Anasayfa</a>
+      <a href="./about.html">Biz Kimiz?</a>
+      <a href="./menu.html">Menü</a>
+      <a href="./contact.html">İletişim</a>
     </nav>
+  
+    <!-- Search -->
+    <div class="nav-search">
+      <input type="search" placeholder="Ara..." aria-label="Search">
+    </div>
+  
+    <!-- Social Icons -->
+    <div class="nav-social">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+    </div>
   </header>
+  
 
   <!-- MENU HERO (küçük) -->
   <section class="menu-hero">
